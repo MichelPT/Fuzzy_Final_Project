@@ -22,7 +22,7 @@ function varargout = FIGDiabetes(varargin)
 
 % Edit the above text to modify the response to help FIGDiabetes
 
-% Last Modified by GUIDE v2.5 09-Jun-2023 14:27:03
+% Last Modified by GUIDE v2.5 12-Jun-2023 23:21:59
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -170,3 +170,11 @@ set(handles.result,'string', output);
 % hObject    handle to pushbutton1 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes during object creation, after setting all properties.
+function text21_CreateFcn(hObject, eventdata, handles)
+
+% hObject    handle to text21 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
