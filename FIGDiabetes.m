@@ -153,15 +153,15 @@ function pushbutton1_Callback(hObject, eventdata, handles)
 a = readfis('FISDiabetes');
 output = evalfis([handles.umurInput handles.bbInput handles.tdInput],a);
 if output<0.75
-    output='Sangat rendah';
+    output='Very low';
 else if output<1
-        output='Rendah';
+        output='Low';
     else if output<3
-            output='Menengah';
+            output='Medium';
         else if output<4
-                output='Tinggi';
+                output='High';
             else 
-                output='Sangat Tinggi';
+                output='Very High';
             end
         end
     end

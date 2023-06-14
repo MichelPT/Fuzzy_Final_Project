@@ -15,39 +15,38 @@ DefuzzMethod='centroid'
 Name='Umur'
 Range=[0 100]
 NumMFs=4
-MF1='muda':'trapmf',[-10 0 15 31]
-MF2='paruhbaya':'trimf',[29 45 61]
-MF3='tua':'trimf',[59 66 81]
-MF4='sangattua':'trapmf',[76 80 110 120]
+MF1='young':'trapmf',[-10 0 29 45]
+MF2='midage':'trimf',[29 45 66]
+MF3='old':'trimf',[45 66 81]
+MF4='veryold':'trapmf',[66 80 110 120]
 
 [Input2]
 Name='Berat_badan'
 Range=[0 120]
 NumMFs=5
-MF1='kurusringan':'trapmf',[-24 -19.2 38.4 56]
-MF2='kurusberat':'trimf',[54 60 66]
-MF3='normal':'trimf',[64 70 81]
-MF4='gemukringan':'trimf',[79 93.1 96]
-MF5='gemukberat':'trapmf',[94 110 144 168]
+MF1='thin':'trapmf',[-24 -19.2 39 60]
+MF2='slim':'trimf',[39 60 70]
+MF3='normal':'trimf',[60 70 93]
+MF4='lightfat':'trimf',[70 93 110]
+MF5='fat':'trapmf',[93 110 144 168]
 
 [Input3]
 Name='tekanan_darah'
 Range=[0 300]
 NumMFs=4
-MF1='rendah':'trapmf',[-10 -8 110 134]
-MF2='normal':'trimf',[127 140 153]
-MF3='tinggi':'trimf',[142 160 172]
-MF4='sangattinggi':'trapmf',[155 180 300 300]
+MF1='low':'trapmf',[-8.94 -6.94 100 140]
+MF2='normal':'trimf',[100 140 160]
+MF3='high':'trimf',[142 160 190]
+MF4='veryhigh':'trapmf',[160 190 300 300]
 
 [Output1]
 Name='diabetes'
-Range=[0 10]
-NumMFs=5
-MF1='sangatrendah':'trapmf',[-5 -4 0.25 0.75]
-MF2='rendah':'trimf',[0 0.5 1]
-MF3='menengah':'trimf',[1 2 3]
-MF4='tinggi':'trimf',[2 3 4]
-MF5='sangattinggi':'trapmf',[3.75 4 20 25]
+Range=[0 5]
+NumMFs=4
+MF1='verylow':'trapmf',[-2.5 -2 0 0.5]
+MF2='low':'trimf',[0 0.5 2]
+MF3='medium':'trimf',[0.5 2 3.5]
+MF4='high':'trapmf',[2 3.5 5 6]
 
 [Rules]
 1 1 1, 1 (1) : 1
